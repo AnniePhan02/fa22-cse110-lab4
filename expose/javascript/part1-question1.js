@@ -8,3 +8,6 @@ function sumValue(num1, num2, add) {
   console.log('final result: ', result);
 }
 sumValues(10, 10, true);
+
+
+// example
