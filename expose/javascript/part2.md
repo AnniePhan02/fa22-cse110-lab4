@@ -12,9 +12,28 @@
 11. This function will return a list of [50, 100, 150] because while discounted is a const variable, that means it cannot be reassigned. However, it can still be mutated and elements can be added to it. Its scope on line 14 (the return) is still within the scope of where it was declared.
 
 ## Data Types
-12. Answers below:
+12. Objects
     1.  student.name
     2.  student['Grad Year']
     3.  student.greeting()
     4.  student['Favorite Teacher'].name
     5.  student.courseLoad[0]
+
+13.  Arithmetic
+    1.  '3' + 2 = 5. '3' is type converted to integer 3. 3 + 2 = 5
+    2.  '3' - 2 = 1. '3' is type converted to integer 3. 3 - 2 = 1
+    3.  3 + null = 3. Null is coverted to 0. 3 + 0 = 3.
+    4.  '3' + null = '3null'. String concatenation because it is with string '3' and then null value. Null value is type converted into a string.
+    5.  true + 3 = 4. True is converted to 1. 1 +3 = 4
+    6.  false + null = 0. false and null is converted to 0. 0 + 0 = 0.
+    7.  '3' + undefined = '3undefined'. String concatentation happens because it is with string '3' and undefined is type converted to 'undefined'
+    8.  '3' - undefined = NaN. This is because '3' is converted to 3 and undefined is converted to NaN.
+14.  Comparison
+    1.  '2' > 1. True. '2' is type converted to 2 and 2 > 1.
+    2.  '2' < '12'. False. '2' is lexicographically greater than '12'
+    3.  2 == '2'. True. '2' is converted to 2. 2 == 2 which is true. 
+    4.  2 === '2'. False because under strict equality check, these are of different types
+    5.  true == 2. False. true is converted to 1 and 1 does not equal 2. 
+    6.  true === Boolean(2). True. Boolean(2) is converted to become true. This is now of the same type and equivalence.
+
+15. Between the == and ===, the === is a strict equality operator. In other words, === checks if items on both the left and right side are of the same type and is equivalent. It does not type convert the items on the left and right side. Therefore, when === is used, it is directly checking for true equivalence. == compares two items and type converting can be used in order to compare these elements.
