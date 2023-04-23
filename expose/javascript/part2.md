@@ -37,3 +37,18 @@
     6.  true === Boolean(2). True. Boolean(2) is converted to become true. This is now of the same type and equivalence.
 
 15. Between the == and ===, the === is a strict equality operator. In other words, === checks if items on both the left and right side are of the same type and is equivalent. It does not type convert the items on the left and right side. Therefore, when === is used, it is directly checking for true equivalence. == compares two items and type converting can be used in order to compare these elements.
+
+17. If the function above is called with the following parameters, `(modifyArray([1,2,3]), doSomething)`, the result will be a list of newArr or [2,4,6] because the function modifyArray() and doSomething() are function declarations which have global scope. When modifyArray() is called in line 13, it is allowed because it is within the same scope as those functions. The doSomething function is passed as a parameter into the modifyArray function. Therefore, it is a callback function that is called when the modifyArray function calls doSomething in its body. The const newArr inside of modify array has elements pushed into it and is returned at the end - these elements are modified by the doSomething function as each elemeent from the [1,2,3] is passed in to be changed. At the end, the modifyArray function modifies the [1,2,3] array to [2,4,6].
+
+19. The output of the above code is: 
+
+1
+
+4
+
+3
+
+2
+
+2 is printed last. 1, 4, 3 are printed in that order, followed by 2. 
+
