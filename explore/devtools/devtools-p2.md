@@ -1,1 +1,2 @@
-
+1. The bug was that the num1 and num2 inputs are taken as strings. Therefore, when they added together to find the sums, they become strings that are concatenated together instead. They are of the string type instead of int.
+2. I would fix it by changing num1 and num2 types to be integers. ![Fix](fix.png)
